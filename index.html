@@ -5,6 +5,49 @@
 		<title>Accessible slideshow with SlidesJS</title>	   
 		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>		
 		<link rel="stylesheet" href="css/style.css">	
+		<style>
+			/* Media quires for a responsive layout */
+			/* For tablets & smart phones */
+			@media (max-width: 767px) {
+			    body {
+			        padding-left: 10px;
+			        padding-right: 10px;
+			    }
+			    .container {
+			        width: auto;
+			    }
+			    #slides div div p{
+			        display: none;
+			    }
+			}
+			
+			/* For smartphones */
+			@media (max-width: 480px) {
+			    .container {
+			        width: auto;
+			    }
+			    #slides div div p{
+			        display: none;
+			    }
+			}
+			
+			/* For smaller displays like laptops */
+			@media (min-width: 768px) and (max-width: 979px) {
+			    .container {
+			        width: 724px;
+			    }
+			    #slides div span p{
+			        display: none;
+			    }
+			}
+			
+			/* For larger displays */
+			@media (min-width: 1200px) {
+			    .container {
+			        width: 1170px;
+			    }
+			}
+		</style>
 		<!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
 		<meta name="viewport" content="width=device-width">
 	</head>
