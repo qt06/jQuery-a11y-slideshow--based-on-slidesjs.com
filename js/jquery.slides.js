@@ -62,6 +62,8 @@
       $.data(this, "total", $element.children().not(".slidesjs-navigation", $element).length);
       $.data(this, "current", this.options.start - 1);
       $.data(this, "vendorPrefix", this._getVendorPrefix());
+      // set total var
+      $(".slidesjs-slide-total").html(this.data.total);
       if (typeof TouchEvent !== "undefined") {
         $.data(this, "touch", true);
         this.options.effect.slide.speed = this.options.effect.slide.speed / 2;
